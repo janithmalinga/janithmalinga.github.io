@@ -1,37 +1,5 @@
-## Welcome to GitHub Pages
+## About Me
 
-You can use the [editor on GitHub](https://github.com/janithmalinga/janithmalinga.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+A little background about myself; I am currently a security consultant employed in the [Eguardian Global Service](https://www.egscyber.com/). I have experience in information security involving security assessments, vulnerability management, and configuration management. For the past two years I have had the opportunity to perform security assessments and audits against enterprise-wide information security programs. In addition to performing security assessments, I have been involved with conducting digital forensic investigations in some policy violations.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/janithmalinga/janithmalinga.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+My main research areas are Web application security, Network monitoring and social engineering. 

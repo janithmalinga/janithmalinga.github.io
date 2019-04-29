@@ -1,0 +1,15 @@
+# Site settings
+title: Security Findings
+email: itjanith@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Cyber security is a vast and a volatile feild. Always the technology is changing. We can not 
+  servive alone. Sharing knowledge is the main advantage for us white hat hackers. This site is 
+  for sharing knowledge. My main research area are Application Security, Network Security Monitoring
+  and Forensic Analysis.   
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://janithmalinga.github.io" # the base hostname & protocol for your site
+twitter_username: janithSmalinga
+github_username:  janithmalinga
+
+# Build settings
+markdown: kramdown

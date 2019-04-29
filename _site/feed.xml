@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security Findings</title>
+    <description>Cyber security is a vast and a volatile feild. Always the technology is changing. We can not  servive alone. Sharing knowledge is the main advantage for us white hat hackers. This site is  for sharing knowledge. My main research area are Application Security, Network Security Monitoring and Forensic Analysis.   
+</description>
+    <link>http://janithmalinga.github.io/</link>
+    <atom:link href="http://janithmalinga.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 29 Apr 2019 10:07:35 +0530</pubDate>
+    <lastBuildDate>Mon, 29 Apr 2019 10:07:35 +0530</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Dump database using error based SQL injection!</title>
+        <description>&lt;p&gt;In this article i’m going to discuss how I was able to dump the all information from a database server which I detected error based sql injection.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 29 Apr 2019 09:19:24 +0530</pubDate>
+        <link>http://janithmalinga.github.io/jekyll/update/2019/04/29/Error-Based-SQL-Injection.html</link>
+        <guid isPermaLink="true">http://janithmalinga.github.io/jekyll/update/2019/04/29/Error-Based-SQL-Injection.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+  </channel>
+</rss>

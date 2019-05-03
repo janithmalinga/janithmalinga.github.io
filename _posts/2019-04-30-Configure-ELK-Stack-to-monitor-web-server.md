@@ -12,25 +12,24 @@ First of all let's understand the main purpose, whenever something happens in ou
 
 In this exercise we are going to build elk stack on a ubuntu 18.04 computer. The commands may change if you are using different OS. So let's build the elk stack.
 
-###Install Elasticsearch
+### Install Elasticsearch
 
-[Use this reference to install elasticsearch][install-elasticsearch]
+Use [this][install-elasticsearch] reference to install elasticsearch
 
-###Install logstash
+### Install logstash
 
-Use this reference to install logstash
-[Use this reference to install logstash][install-logstash]https://github.com/janithmalinga/...
+Use [this][install-logstash] reference to install logstash
 
-###Install kibana
+### Install kibana
 
-[Use this reference to install kibana][install-kibana]
+Use [this][install-kibana] reference to install kibana
 
 Ok installation part is done now we need to configure these three components to work together. There is no need to configure kibana it already configured to talk to elasticsearch at the installation. 
 
-###Configuring logstash
+### Configuring logstash
 
 We are going to use filebeat in web server to send logs. So the input should be beats and the port should be the exact same as in filebeat. Logstash should send it's output to elasticsearch. We can use filter to aggregate the values. Below is a simple logstash config file we are going to use in this exercise.
 
-[install-elasticsearch]: https://github.com/janithmalinga/ELK-Stack-Stuff/blob/master/elasticsearch/01%20elasticsearch.txt
-[install-logstash]: https://github.com/janithmalinga/ELK-Stack-Stuff/tree/master/logstash
-[install-kibana]: https://github.com/janithmalinga/ELK-Stack-Stuff/blob/master/kibana/kibana%20setup.txt
+[install-elasticsearch]:  https://github.com/janithmalinga/ELK-Stack-Stuff/blob/master/elasticsearch/01%20elasticsearch.txt
+[install-logstash]:       https://github.com/janithmalinga/ELK-Stack-Stuff/tree/master/logstash
+[install-kibana]:         https://github.com/janithmalinga/ELK-Stack-Stuff/blob/master/kibana/kibana%20setup.txt

@@ -15,7 +15,7 @@ In this exercise we are going to build elk stack on a ubuntu 18.04 computer. The
 Install Elasticsearch
 
 Use this reference to install elasticsearch
-https://github.com/janithmalinga/ELK-Stack-Stuff/blob/master/elasticsearch/01%20elasticsearch.txt
+<a href="{{ https://github.com/janithmalinga/ELK-Stack-Stuff/blob/master/elasticsearch/01%20elasticsearch.txt | prepend: site.baseurl }}">{{ install elasticsearch }}</a>
 
 Install logstash
 

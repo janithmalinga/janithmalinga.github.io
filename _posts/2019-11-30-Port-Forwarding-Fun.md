@@ -5,7 +5,7 @@ date:   2019-11-30 09:19:24 +0530
 categories: General
 ---
 
-### this post I'm going to discuss how to do port forwarding and connect hosts with different networks.
+### In this post I'm going to discuss how to do port forwarding and connect hosts with different networks.
 
 ### I have 2 hosts which is in 2 different networks and it do not have dirrect connectivity. Below are the IP status of the hosts.
 

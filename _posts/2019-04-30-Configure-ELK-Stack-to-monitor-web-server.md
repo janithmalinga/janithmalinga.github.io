@@ -30,6 +30,6 @@ Ok installation part is done now we need to configure these three components to 
 
 We are going to use filebeat in web server to send logs. So the input should be beats and the port should be the exact same as in filebeat. Logstash should send it's output to elasticsearch. We can use filter to aggregate the values. Below is a simple logstash config file we are going to use in this exercise.
 
-[install-elasticsearch]:  https://github.com/janithmalinga/ELK-Stack-Stuff/blob/master/elasticsearch/01%20elasticsearch.txt
-[install-logstash]:       https://github.com/janithmalinga/ELK-Stack-Stuff/tree/master/logstash
-[install-kibana]:         https://github.com/janithmalinga/ELK-Stack-Stuff/blob/master/kibana/kibana%20setup.txt
+[install-elasticsearch]:  https://github.com/janithmalinga/ELK-Stack-Stuff/blob/master/elasticsearch/elasticsearch.md
+[install-logstash]:       https://github.com/janithmalinga/ELK-Stack-Stuff/blob/master/logstash/logstash.md
+[install-kibana]:         https://github.com/janithmalinga/ELK-Stack-Stuff/blob/master/kibana/kibana.md

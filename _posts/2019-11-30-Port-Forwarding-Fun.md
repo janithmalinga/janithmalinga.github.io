@@ -2,8 +2,11 @@
 layout: post
 title:  "Port Forwarding Fun!"
 date:   2019-11-30 09:19:24 +0530
-categories: General
+author: janith malinga
+categories: redteam
 ---
+
+![title image](https://images.pexels.com/photos/618613/pexels-photo-618613.jpeg)
 
 ### In this post I'm going to discuss how to do port forwarding and connect hosts with different networks.
 

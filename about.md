@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I'm a senior cyber security consultant and I spend most of my time conducting Penetration Testing, System Auditing, Reverse Engineering, Writing and Testing exploits and mostly coding python.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+Currently I am working as a Senior Security Consultant at DELTASPIKE (PVT) ltd. Where I'm regularly engaged in Penetration testing(Web/Network), Red/Blue/Purple team engagements and cyber security trainings.
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+I have over 4 years of experience in the field of Cyber Security, having being a Cyber Security Consultant for the Government and Corporate sector in for many local and foreign institutes.

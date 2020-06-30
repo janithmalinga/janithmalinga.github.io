@@ -10,4 +10,7 @@ apache access log or injecting commands through error logs are some of them. Thi
 we are going to send the payload through SMTP(mail) and then we are going to execute remote commands.
 
 This image shows the lfi that I have found,
-![LFI by burpsuite](../_images/_fli-smtp-shell/lfi-smtp-1.png)
+
+![LFI by burpsuite](https://raw.githubusercontent.com/janithmalinga/janithmalinga.github.io/master/_images/_fli-smtp-shell/lfi-smtp-1.png)
+
+

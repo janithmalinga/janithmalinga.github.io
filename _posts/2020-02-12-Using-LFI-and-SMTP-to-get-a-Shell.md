@@ -5,8 +5,8 @@ date:   2020-02-12 08:12:24 +0530
 categories: redteam ctf
 ---
 
-Local file inclusion or LFI can be used in many ways to execute remote commands and get a reverse shell injecting commands through 
-apache access log or injecting commands through error logs are some of them. This article is little bit different than those techniques
+Local file inclusion or LFI can be used in many ways to execute remote commands and get a reverse shell. Some of them are injecting commands through 
+apache access log or injecting commands through error logs. This article is little bit different than those techniques
 we are going to send the payload through SMTP(mail) and then we are going to execute remote commands.
 
 This image shows the lfi that I have found,

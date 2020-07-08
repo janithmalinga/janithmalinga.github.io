@@ -13,6 +13,10 @@ uname -a
 ```
 If the host is older than 2016 there is a high probability of the host is being vulnerable to dirtycow attack.
 [here you can find the dirtycow info](https://dirtycow.ninja/)
+Before running this exploit check c compiler is installed in the host
+```
+which gcc
+```
 
 ## Run this shell script to get more info
 ```

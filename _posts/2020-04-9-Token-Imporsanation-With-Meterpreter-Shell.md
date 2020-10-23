@@ -32,7 +32,7 @@ List All the tokens
 ```
 list_tokens -g
 ```
-![List the tokens](https://github.com/janithmalinga/janithmalinga.github.io/blob/master/_images/_imporsanate/list_token.png)
+![List the tokens](https://raw.githubusercontent.com/janithmalinga/janithmalinga.github.io/master/_images/_imporsanate/list_token.png)
 Then we can imporsanate the administrator using administrator token
 ```
 impersonate_token "BUILTIN\Administrators"

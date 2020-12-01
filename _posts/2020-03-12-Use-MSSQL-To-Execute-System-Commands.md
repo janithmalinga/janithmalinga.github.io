@@ -5,7 +5,7 @@ date:   2020-03-12 01:41:34 +0530
 categories: redteam ctf
 ---
 
-##Introduction
+## Introduction
 
 When we conducting a penetration test, the end goal of the reconnaissance phase is finding a way to execute a system command. If your system have a 
 MSSQL database and you have found credentials to it congratulations you have found a way to execute system command. This blog post talks about 

@@ -40,3 +40,29 @@ Due to the security issues in SHA1 the improved version of algorithm is introduc
 </ul>
 
 and it represents the output in both 32bit and 64bit strings.
+
+<table>
+  <tr>
+    <td>HASH</td>
+    <td>Msg Digest size</td>
+    <td>Represent String length</td>
+  </tr>
+  
+  <tr>
+    <td>MD5</td>
+    <td>128 bits</td>
+    <td>32 digits</td>
+  </tr>
+  
+  <tr>
+    <td>SHA-1</td>
+    <td>160 bit</td>
+    <td>40 digits</td>
+  </tr>
+  
+  <tr>
+    <td>SHA-2</td>
+    <td>224,256,384,512</td>
+    <td>64 bits</td>
+  </tr>
+  </table>

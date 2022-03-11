@@ -41,6 +41,8 @@ Due to the security issues in SHA1 the improved version of algorithm is introduc
 
 and it represents the output in both 32bit and 64bit strings.
 
+### HASH Output Comparison
+
 <table>
   <tr>
     <td>HASH</td>

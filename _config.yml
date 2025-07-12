@@ -2,14 +2,60 @@
 title: Security Findings
 email: itjanith@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Cyber security is a vast and a volatile feild. Always the technology is changing. We can not 
-  servive alone. Sharing knowledge is the main advantage for us white hat hackers. This site is 
-  for sharing knowledge. My main research area are Application Security, Network Security Monitoring
+  Cyber security is a vast and a volatile field. Always the technology is changing. We cannot 
+  survive alone. Sharing knowledge is the main advantage for us white hat hackers. This site is 
+  for sharing knowledge. My main research areas are Application Security, Network Security Monitoring
   and Forensic Analysis.   
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://janithmalinga.github.io" # the base hostname & protocol for your site
+url: "https://janithmalinga.github.io" # the base hostname & protocol for your site
 twitter_username: janithSmalinga
-github_username:  janithmalinga
+github_username: janithmalinga
+linkedin_username: janithmalinga
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate-v2
+
+# Pagination
+paginate: 10
+paginate_path: "/page/:num/"
+
+# Collections
+collections:
+  categories:
+    output: true
+    permalink: /categories/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      toc: true
+      comments: true
+      share: true
+
+# Social media
+social:
+  - name: GitHub
+    url: https://github.com/janithmalinga
+    icon: github
+  - name: Twitter
+    url: https://twitter.com/janithSmalinga
+    icon: twitter
+  - name: LinkedIn
+    url: https://linkedin.com/in/janithmalinga
+    icon: linkedin
+
+# Analytics
+google_analytics: # Add your GA tracking ID

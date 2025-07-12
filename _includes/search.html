@@ -1,0 +1,51 @@
+<div class="search-container">
+  <input type="text" id="search-input" placeholder="Search posts..." />
+  <div id="search-results"></div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('search-input');
+  const searchResults = document.getElementById('search-results');
+  
+  // Fetch all posts data
+  fetch('/search.json')
+    .then(response => response.json())
+    .then(data => {
+      const posts = data;
+      
+      searchInput.addEventListener('input', function() {
+        const query = this.value.toLowerCase();
+        if (query.length < 2) {
+          searchResults.innerHTML = '';
+          searchResults.style.display = 'none';
+          return;
+        }
+        
+        const results = posts.filter(post => 
+          post.title.toLowerCase().includes(query) ||
+          post.excerpt.toLowerCase().includes(query) ||
+          post.categories.some(cat => cat.toLowerCase().includes(query))
+        );
+        
+        displayResults(results);
+      });
+    });
+    
+  function displayResults(results) {
+    if (results.length === 0) {
+      searchResults.innerHTML = '<p>No results found</p>';
+    } else {
+      const html = results.slice(0, 5).map(post => `
+        <div class="search-result">
+          <h4><a href="${post.url}">${post.title}</a></h4>
+          <p>${post.excerpt.substring(0, 150)}...</p>
+          <small>${post.categories.join(', ')}</small>
+        </div>
+      `).join('');
+      searchResults.innerHTML = html;
+    }
+    searchResults.style.display = 'block';
+  }
+});
+</script> 

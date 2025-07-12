@@ -1,15 +1,65 @@
 ---
 layout: default
 ---
+
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %}
+        {{ page.date | date: date_format }}
+      </time>
+      {% if page.author %}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span itemprop="name">{{ page.author }}</span>
+          </span>
+      {% endif %}
+      {% if page.categories %}
+        • <span class="categories">
+            {% for category in page.categories %}
+              <a href="{{ site.baseurl }}/categories/#{{ category | slugify }}">{{ category }}</a>
+            {% endfor %}
+          </span>
+      {% endif %}
+      {% if page.tags %}
+        • <span class="tags">
+            {% for tag in page.tags %}
+              <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}" class="tag">{{ tag }}</a>
+            {% endfor %}
+          </span>
+      {% endif %}
+    </p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
+    {% if page.toc %}
+      <div class="toc">
+        <h2>Table of Contents</h2>
+        {% include toc.html html=content %}
+      </div>
+    {% endif %}
+    
     {{ content }}
+  </div>
+
+  {% if site.disqus.shortname %}
+    {% include disqus_comments.html %}
+  {% endif %}
+
+  <div class="related-posts">
+    <h3>Related Posts</h3>
+    {% include related_posts.html %}
+  </div>
+
+  <div class="post-navigation">
+    {% if page.previous.url %}
+      <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+    {% endif %}
+    {% if page.next.url %}
+      <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+    {% endif %}
   </div>
 
 </article>

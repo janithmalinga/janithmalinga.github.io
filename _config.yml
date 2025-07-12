@@ -58,3 +58,6 @@ social:
 
 # Analytics
 google_analytics: # Add your GA tracking ID
+
+# Force rebuild
+rebuild: true

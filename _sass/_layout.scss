@@ -401,6 +401,96 @@
   }
 }
 
+// Professional tiles styling
+.tiles-grid {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+.tile {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  overflow: hidden;
+  width: 340px;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+.tile:hover {
+  box-shadow: 0 6px 24px rgba(0,122,204,0.15);
+}
+.tile-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.tile-content {
+  padding: 24px 16px 16px 16px;
+}
+.tile-title {
+  font-size: 1.2rem;
+  margin: 0 0 10px 0;
+  color: #222;
+}
+.tile-excerpt {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 18px;
+}
+.tile-button {
+  background: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.tile-button:hover {
+  background: #005a9e;
+}
+
+// Personal posts styling
+.personal-posts {
+  .post-list {
+    list-style: none;
+    padding: 0;
+    
+    li {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #e1e4e8;
+      
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+  
+  .post-excerpt {
+    color: #586069;
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+  
+  .post-tags {
+    margin-top: 10px;
+    
+    .tag {
+      display: inline-block;
+      background: #f1f3f4;
+      color: #5f6368;
+      padding: 2px 8px;
+      margin: 2px;
+      border-radius: 12px;
+      font-size: 11px;
+    }
+  }
+}
+
 // Responsive improvements
 @media (max-width: 768px) {
   .post-navigation {
@@ -414,5 +504,17 @@
   
   .search-container #search-input {
     font-size: 16px; // Prevents zoom on iOS
+  }
+}
+
+// Responsive design for tiles
+@media (max-width: 768px) {
+  .tiles-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .tile {
+    padding: 15px;
   }
 }

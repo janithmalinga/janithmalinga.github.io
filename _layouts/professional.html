@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="professional-posts">
+  <h1 class="page-heading">{{ page.title }}</h1>
+  <div class="tiles-grid">
+    {% for post in site.professional %}
+      <div class="tile">
+        <a href="{{ post.medium_url }}" target="_blank" rel="noopener">
+          {% if post.tile_image %}
+            <img src="{{ post.tile_image }}" alt="{{ post.title }}" class="tile-image"/>
+          {% endif %}
+          <div class="tile-content">
+            <h3 class="tile-title">{{ post.title }}</h3>
+            <p class="tile-excerpt">{{ post.excerpt }}</p>
+            <button class="tile-button">Read on Medium</button>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div> 

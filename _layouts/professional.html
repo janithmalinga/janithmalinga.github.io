@@ -2,19 +2,19 @@
 layout: default
 ---
 
-<div class="professional-posts">
-  <h1 class="page-heading">{{ page.title }}</h1>
-  <div class="tiles-grid">
+<div class="professional-blog">
+  <h1 class="page-heading">Professional Blog</h1>
+  <div class="pswigger-tiles">
     {% for post in site.professional %}
-      <div class="tile">
+      <div class="pswigger-tile">
         <a href="{{ post.medium_url }}" target="_blank" rel="noopener">
           {% if post.tile_image %}
-            <img src="{{ post.tile_image }}" alt="{{ post.title }}" class="tile-image"/>
+            <img src="{{ post.tile_image }}" alt="{{ post.title }}" class="pswigger-tile-image"/>
           {% endif %}
-          <div class="tile-content">
-            <h3 class="tile-title">{{ post.title }}</h3>
-            <p class="tile-excerpt">{{ post.excerpt }}</p>
-            <button class="tile-button">Read on Medium</button>
+          <div class="pswigger-tile-content">
+            <h2 class="pswigger-tile-title">{{ post.title }}</h2>
+            <p class="pswigger-tile-excerpt">{{ post.excerpt }}</p>
+            <span class="pswigger-tile-button">Read on Medium</span>
           </div>
         </a>
       </div>

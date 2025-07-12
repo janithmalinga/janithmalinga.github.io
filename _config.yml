@@ -17,22 +17,21 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:year/:month/:day/:title/
 
-# Plugins
+# Plugins (GitHub Pages compatible)
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
-  - jekyll-paginate-v2
 
-# Pagination
+# Note: jekyll-paginate-v2 is not supported by GitHub Pages
+# Using standard pagination instead
 paginate: 10
 paginate_path: "/page/:num/"
 
-# Collections
-collections:
-  categories:
-    output: true
-    permalink: /categories/:name/
+# Collections (simplified for GitHub Pages compatibility)
+# categories:
+#   output: true
+#   permalink: /categories/:name/
 
 # Defaults
 defaults:

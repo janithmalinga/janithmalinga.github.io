@@ -69,26 +69,34 @@ layout: default
   justify-content: center;
   align-items: center;
   height: 100vh;
-  gap: 60px;
+  gap: 80px;
+}
+
+.landing-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .landing-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 80px;
+  width: 280px;
+  height: 120px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 12px;
-  font-size: 1.5rem;
-  color: #fff;
+  border-radius: 16px;
+  font-size: 2.2rem;
+  color: #ffffff;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  margin-bottom: 15px;
 }
 
 .landing-button::before {
@@ -108,21 +116,35 @@ layout: default
 
 .landing-button:hover {
   background: rgba(255, 255, 255, 0.2);
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+}
+
+.landing-description {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  max-width: 250px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .landing-container {
     flex-direction: column;
-    gap: 40px;
+    gap: 60px;
   }
   
   .landing-button {
-    width: 180px;
-    height: 70px;
-    font-size: 1.3rem;
+    width: 240px;
+    height: 100px;
+    font-size: 1.8rem;
+  }
+  
+  .landing-description {
+    font-size: 1rem;
+    max-width: 220px;
   }
 }
 
@@ -143,8 +165,15 @@ layout: default
 <div class="particles" id="particles"></div>
 
 <div class="landing-container">
-  <a class="landing-button" href="{{ site.baseurl }}/personal/">Personal</a>
-  <a class="landing-button" href="{{ site.baseurl }}/professional/">Professional</a>
+  <div class="landing-section">
+    <a class="landing-button" href="{{ site.baseurl }}/personal/">Personal</a>
+    <p class="landing-description">all my personal stuff</p>
+  </div>
+  
+  <div class="landing-section">
+    <a class="landing-button" href="{{ site.baseurl }}/professional/">Professional</a>
+    <p class="landing-description">all my professional achievements</p>
+  </div>
 </div>
 
 <script>

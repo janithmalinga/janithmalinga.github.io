@@ -10,6 +10,7 @@ html, body {
   padding: 0;
   height: 100%;
   overflow: hidden;
+  background: #0f0f23;
 }
 
 /* Animated Background */
@@ -17,26 +18,26 @@ html, body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background: linear-gradient(45deg, #0f0f23, #1a1a2e, #16213e, #0f3460);
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
-  z-index: -1;
+  z-index: -3;
 }
 
 .radial-gradient {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), 
               rgba(0, 122, 204, 0.3) 0%, 
               rgba(0, 122, 204, 0.1) 30%, 
               transparent 70%);
   pointer-events: none;
-  z-index: -1;
+  z-index: -2;
   transition: all 0.1s ease;
 }
 
@@ -44,8 +45,8 @@ html, body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   pointer-events: none;
   z-index: -1;
 }

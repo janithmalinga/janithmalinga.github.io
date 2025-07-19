@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Third Page with Waves
+layout: no-nav
+title: Third Page
 ---
 
 <style>
@@ -20,6 +20,7 @@ html, body {
   left: 0;
   width: 100vw;
   height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(45deg, #0f0f23, #1a1a2e, #16213e, #0f3460);
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
@@ -32,6 +33,7 @@ html, body {
   left: 0;
   width: 100vw;
   height: 100vh;
+  min-height: 100vh;
   background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), 
               rgba(0, 122, 204, 0.3) 0%, 
               rgba(0, 122, 204, 0.1) 30%, 
@@ -47,72 +49,16 @@ html, body {
   left: 0;
   width: 100vw;
   height: 100vh;
+  min-height: 100vh;
   pointer-events: none;
   z-index: -1;
-}
-
-/* Wave Animation */
-.wave-container {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
-  height: 120px;
-  pointer-events: none;
-  z-index: -1;
-  overflow: hidden;
-}
-
-.wave {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 200%;
-  height: 100%;
-  background: linear-gradient(90deg, 
-              transparent 0%, 
-              rgba(0, 122, 204, 0.3) 25%, 
-              rgba(0, 122, 204, 0.4) 50%, 
-              rgba(0, 122, 204, 0.3) 75%, 
-              transparent 100%);
-  animation: waveMove 8s ease-in-out infinite;
-}
-
-.wave-2 {
-  animation: waveMove 10s ease-in-out infinite reverse;
-  background: linear-gradient(90deg, 
-              transparent 0%, 
-              rgba(0, 122, 204, 0.2) 25%, 
-              rgba(0, 122, 204, 0.3) 50%, 
-              rgba(0, 122, 204, 0.2) 75%, 
-              transparent 100%);
-  height: 80px;
-  bottom: 20px;
-}
-
-.wave-3 {
-  animation: waveMove 12s ease-in-out infinite;
-  background: linear-gradient(90deg, 
-              transparent 0%, 
-              rgba(0, 122, 204, 0.1) 25%, 
-              rgba(0, 122, 204, 0.2) 50%, 
-              rgba(0, 122, 204, 0.1) 75%, 
-              transparent 100%);
-  height: 60px;
-  bottom: 40px;
-}
-
-@keyframes waveMove {
-  0% { transform: translateX(-50%) scaleY(1); }
-  50% { transform: translateX(0%) scaleY(1.2); }
-  100% { transform: translateX(50%) scaleY(1); }
 }
 
 .particle {
   position: absolute;
-  width: 2px;
-  height: 2px;
-  background: rgba(255, 255, 255, 0.5);
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.6);
   border-radius: 50%;
   animation: float 6s ease-in-out infinite;
 }
@@ -322,39 +268,6 @@ html, body {
   }
 }
 
-/* Wave Responsive Design */
-@media (max-width: 768px) {
-  .wave-container {
-    height: 80px;
-  }
-  
-  .wave-2 {
-    height: 60px;
-    bottom: 15px;
-  }
-  
-  .wave-3 {
-    height: 40px;
-    bottom: 30px;
-  }
-}
-
-@media (max-width: 480px) {
-  .wave-container {
-    height: 60px;
-  }
-  
-  .wave-2 {
-    height: 45px;
-    bottom: 10px;
-  }
-  
-  .wave-3 {
-    height: 30px;
-    bottom: 20px;
-  }
-}
-
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
   .animated-bg, .particle {
@@ -370,13 +283,6 @@ html, body {
 <div class="animated-bg"></div>
 <div class="radial-gradient" id="radialGradient"></div>
 <div class="particles" id="particles"></div>
-
-<!-- Wave Animation -->
-<div class="wave-container">
-  <div class="wave"></div>
-  <div class="wave wave-2"></div>
-  <div class="wave wave-3"></div>
-</div>
 
 <!-- Page Content -->
 <div class="page-content">

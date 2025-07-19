@@ -4,6 +4,14 @@ title: Welcome To My Profile
 ---
 
 <style>
+/* Prevent page scrolling */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
 /* Animated Background */
 .animated-bg {
   position: fixed;
@@ -79,7 +87,7 @@ title: Welcome To My Profile
 .hero-section {
   text-align: center;
   max-width: 800px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .hero-title {
@@ -95,15 +103,15 @@ title: Welcome To My Profile
 .hero-subtitle {
   font-size: 1.3rem;
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   line-height: 1.6;
 }
 
 .content-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
   width: 100%;
 }
 

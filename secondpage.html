@@ -164,18 +164,100 @@ html, body {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .content-grid {
+    max-width: 800px;
+    gap: 20px;
+  }
+}
+
 @media (max-width: 768px) {
+  .page-content {
+    padding: 30px 15px;
+  }
+  
   .hero-title {
     font-size: 2.5rem;
   }
   
   .hero-subtitle {
     font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+  
+  .hero-section {
+    margin-bottom: 30px;
   }
   
   .content-grid {
     grid-template-columns: 1fr;
     gap: 20px;
+    max-width: 100%;
+  }
+  
+  .content-card {
+    padding: 25px 20px;
+  }
+  
+  .card-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-content {
+    padding: 20px 10px;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section {
+    margin-bottom: 25px;
+  }
+  
+  .content-card {
+    padding: 20px 15px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+  }
+  
+  .card-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .content-card {
+    padding: 15px 10px;
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
   }
 }
 

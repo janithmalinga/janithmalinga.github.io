@@ -66,13 +66,14 @@ title: Welcome To My Profile
 .page-content {
   position: relative;
   z-index: 1;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 40px 20px;
   color: #fff;
+  overflow: hidden;
 }
 
 .hero-section {
@@ -116,6 +117,9 @@ title: Welcome To My Profile
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
 }
 
 .content-card::before {
@@ -193,19 +197,19 @@ title: Welcome To My Profile
   </div>
   
   <div class="content-grid">
-    <div class="content-card">
+    <a href="{{ site.baseurl }}/personal/" class="content-card">
       <h3 class="card-title">Personal</h3>
       <p class="card-description">
         My travel, readings, thoughts and others.
       </p>
-    </div>
+    </a>
     
-    <div class="content-card">
+    <a href="{{ site.baseurl }}/professional/" class="content-card">
       <h3 class="card-title">Professional</h3>
       <p class="card-description">
         Explore my work and expertise in security.
       </p>
-    </div>
+    </a>
   </div>
 </div>
 

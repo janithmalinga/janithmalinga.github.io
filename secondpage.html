@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Second Page
+title: Welcome To My Profile
 ---
 
 <style>
@@ -151,27 +151,6 @@ title: Second Page
   line-height: 1.6;
 }
 
-.back-button {
-  position: fixed;
-  top: 30px;
-  left: 30px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-  padding: 12px 20px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  z-index: 10;
-}
-
-.back-button:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transform: translateY(-2px);
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-title {
@@ -185,13 +164,6 @@ title: Second Page
   .content-grid {
     grid-template-columns: 1fr;
     gap: 20px;
-  }
-  
-  .back-button {
-    top: 20px;
-    left: 20px;
-    padding: 10px 16px;
-    font-size: 14px;
   }
 }
 
@@ -211,13 +183,10 @@ title: Second Page
 <div class="radial-gradient" id="radialGradient"></div>
 <div class="particles" id="particles"></div>
 
-<!-- Navigation -->
-<a href="{{ site.baseurl }}/" class="back-button">← Back to Home</a>
-
 <!-- Page Content -->
 <div class="page-content">
   <div class="hero-section">
-    <h1 class="hero-title">Welcome to Second Page</h1>
+    <h1 class="hero-title">Welcome To My Profile</h1>
     <p class="hero-subtitle">
       Experience the power of animated backgrounds with radial gradient cursor tracking. 
       This page showcases modern web design techniques inspired by professional platforms.
@@ -226,23 +195,16 @@ title: Second Page
   
   <div class="content-grid">
     <div class="content-card">
-      <h3 class="card-title">Interactive Design</h3>
+      <h3 class="card-title">Personal</h3>
       <p class="card-description">
         The background responds to your mouse movements, creating an engaging and dynamic user experience.
       </p>
     </div>
     
     <div class="content-card">
-      <h3 class="card-title">Modern Aesthetics</h3>
+      <h3 class="card-title">Professional</h3>
       <p class="card-description">
         Glassmorphism effects with backdrop blur create a contemporary, professional appearance.
-      </p>
-    </div>
-    
-    <div class="content-card">
-      <h3 class="card-title">Performance Optimized</h3>
-      <p class="card-description">
-        Built with CSS animations and JavaScript for smooth performance across all devices.
       </p>
     </div>
   </div>

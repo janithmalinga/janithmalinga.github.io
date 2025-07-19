@@ -13,7 +13,21 @@ layout: default
   background: linear-gradient(45deg, #0f0f23, #1a1a2e, #16213e, #0f3460);
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
-  z-index: -1;
+  z-index: -3;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('{{ site.baseurl }}/_images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: -2;
 }
 
 .radial-gradient {
@@ -161,6 +175,7 @@ layout: default
 
 <!-- Animated Background Elements -->
 <div class="animated-bg"></div>
+<div class="background-image"></div>
 <div class="radial-gradient" id="radialGradient"></div>
 <div class="particles" id="particles"></div>
 

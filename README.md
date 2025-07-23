@@ -1,6 +1,7 @@
 ## About Me
 
-A little background about myself; I am currently a security consultant employed in the [Eguardian Global Service](https://www.egscyber.com/). I have experience in information security involving security assessments, vulnerability management, and configuration management. For the past two years I have had the opportunity to perform security assessments and audits against enterprise-wide information security programs. In addition to performing security assessments, I have been involved with conducting digital forensic investigations in some policy violations.
+A little background about myself: I am currently an Application Security Engineer at Amazon. I have hands-on experience in application security, including secure design reviews, threat modeling, vulnerability assessments, and secure code reviews. Over the past few years, I’ve worked closely with engineering teams to strengthen the security posture of large-scale, distributed systems.
 
-My main research areas are Web application security, Network monitoring and social engineering. 
-# Force rebuild
+In addition to my core responsibilities, I have also contributed to security education initiatives and collaborated on improving internal security processes.
+
+My main areas of interest include web application security, threat modeling, and secure software development practices.
